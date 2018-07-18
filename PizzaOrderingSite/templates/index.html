@@ -1,0 +1,62 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Menu
+{% endblock %}
+
+{% block main %}
+
+
+    <table class="table table-striped">
+
+        <thead>
+            <tr>
+                <th>Pizza</th>
+                
+                
+            </tr>
+        </thead>
+        
+        <tbody>
+            {% for item in Menu %}
+                <tr>
+                    <td>{{item}}</td>
+                    
+
+                </tr>
+            {% endfor %}
+        </tbody>
+
+    </table>
+
+
+
+    <table class="table table-striped">
+
+        <thead>
+            <tr>
+                <th>Toppings</th>
+                
+                
+            </tr>
+        </thead>
+        
+        <tbody>
+            {% for item in Toppings %}
+                <tr>
+                    <td>{{item}}</td>
+                    
+
+                </tr>
+            {% endfor %}
+        </tbody>
+
+    </table>
+{% endblock %}
+<!-- 
+<ul>
+        {% for item in menu %}
+            <li>{{ item }}</li>
+        {% endfor %}
+
+    </ul> -->
